@@ -3,6 +3,10 @@ from flask import Flask, render_template, request
 from markupsafe import Markup
 import numpy as np
 import pandas as pd
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from utils.disease import disease_dic
 from utils.fertilizer import fertilizer_dic
 import requests
